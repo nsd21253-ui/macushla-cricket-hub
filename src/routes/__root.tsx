@@ -1,6 +1,8 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { SiteHeader } from "../components/SiteHeader";
+import { SiteFooter } from "../components/SiteFooter";
 
 function NotFoundComponent() {
   return (
@@ -29,19 +31,26 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Macushla Cricket Academy — Premier Cricket Coaching, HSR Layout Bengaluru" },
+      {
+        name: "description",
+        content:
+          "Macushla Cricket Academy by Shivil Kaushik. Professional cricket coaching for all ages in HSR Layout, Bengaluru. Turf nets, expert coaches, structured programs.",
+      },
+      { name: "author", content: "Macushla Cricket Academy" },
+      { property: "og:title", content: "Macushla Cricket Academy — by Shivil Kaushik" },
+      {
+        property: "og:description",
+        content: "Premier cricket coaching academy in HSR Layout, Bengaluru.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
       {
         rel: "stylesheet",
-        href: appCss,
+        href: "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap",
       },
     ],
   }),
@@ -65,5 +74,13 @@ function RootShell({ children }: { children: React.ReactNode }) {
 }
 
 function RootComponent() {
-  return <Outlet />;
+  return (
+    <div className="flex min-h-screen flex-col">
+      <SiteHeader />
+      <main className="flex-1">
+        <Outlet />
+      </main>
+      <SiteFooter />
+    </div>
+  );
 }
