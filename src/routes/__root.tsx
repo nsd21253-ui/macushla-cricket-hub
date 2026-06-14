@@ -49,8 +49,8 @@ export const Route = createRootRoute({
       { name: "description", content: "Macushla Cricket Hub is a website for Macushla Cricket Academy, showcasing its programs and facilities." },
       { property: "og:description", content: "Macushla Cricket Hub is a website for Macushla Cricket Academy, showcasing its programs and facilities." },
       { name: "twitter:description", content: "Macushla Cricket Hub is a website for Macushla Cricket Academy, showcasing its programs and facilities." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6eb0dd09-1893-4a89-9d2f-ccb9b83f9ac0/id-preview-06417620--95b18e4c-5013-43b5-a96a-79b278d91b65.lovable.app-1781404140108.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6eb0dd09-1893-4a89-9d2f-ccb9b83f9ac0/id-preview-06417620--95b18e4c-5013-43b5-a96a-79b278d91b65.lovable.app-1781404140108.png" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/46daf4f9-6b49-4cbd-8572-94368e101ad3/id-preview-f2247895--95b18e4c-5013-43b5-a96a-79b278d91b65.lovable.app-1781404315052.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/46daf4f9-6b49-4cbd-8572-94368e101ad3/id-preview-f2247895--95b18e4c-5013-43b5-a96a-79b278d91b65.lovable.app-1781404315052.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
